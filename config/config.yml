@@ -1,0 +1,25 @@
+filename:
+    twitter_file    : "twitter_input"
+    wikipedida_file : "wiki"
+    part_file       : "part"
+
+dump: 20
+
+part:
+    noun_main       : on
+    noun_sub        : off
+    verb_main       : on
+    verb_sub        : off
+    adjective_main  : on
+    adjective_sub   : off
+    adverb          : off
+    particle        : off
+    auxiliary_verb  : off
+    conjunction     : off
+    prefix          : off
+    filler          : off
+    impression_verb : off
+    three_dots      : off
+    phrase_point    : off
+    reading_point   : off
+    other           : off
