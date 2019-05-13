@@ -1,25 +1,47 @@
 filename:
     twitter_file    : "twitter_input"
-    wikipedida_file : "wiki"
+    wikipedida_file : "twitter_target"
+    relation_file   : "relation"
     part_file       : "part"
 
-dump: 20
+dump: 5
+
+cut: on
 
 part:
-    noun_main       : on
-    noun_sub        : off
-    verb_main       : on
-    verb_sub        : off
-    adjective_main  : on
-    adjective_sub   : off
-    adverb          : off
-    particle        : off
-    auxiliary_verb  : off
-    conjunction     : off
-    prefix          : off
-    filler          : off
-    impression_verb : off
-    three_dots      : off
-    phrase_point    : off
-    reading_point   : off
-    other           : off
+    use:
+        noun_main       : on
+        noun_sub        : on
+        verb_main       : on
+        verb_sub        : on
+        adjective_main  : on
+        adjective_sub   : on
+        adverb          : off
+        particle        : off
+        auxiliary_verb  : off
+        conjunction     : off
+        prefix          : off
+        filler          : off
+        impression_verb : off
+        three_dots      : off
+        phrase_point    : off
+        reading_point   : off
+        other           : off
+    token:
+        noun_main       : "自立名詞"
+        noun_sub        : "非自立名詞"
+        verb_main       : "自立動詞"
+        verb_sub        : "非自立動詞"
+        adjective_main  : "自立形容詞"
+        adjective_sub   : "非自立形容詞"
+        adverb          : "副詞"
+        particle        : "助詞"
+        auxiliary_verb  : "助動詞"
+        conjunction     : "接続詞"
+        prefix          : "接頭詞"
+        filler          : "フィラー"
+        impression_verb : "感動詞"
+        three_dots      : "ドット"
+        phrase_point    : "句点"
+        reading_point   : "読点"
+        other           : "その他"
